@@ -6,7 +6,7 @@ from ftplib import error_perm
 from socket import gaierror
 
 #Get the name of the script to ignore it when uploading
-ignoreFile = os.path.basename(inspect.getfile(inspect.currentframe()))
+ignoreFile = os.path.basename(__file__)
 #Path to upload in the server
 path = '/path/to/upload';
 
